@@ -7,4 +7,5 @@ RUN apt-get update
 
 USER airflow
 RUN pip install --no-cache-dir --upgrade pip \
-    pip install --force --no-cache-dir pandas
+    pip install --force --no-cache-dir pandas \
+    pip install --force --no-cache-dir "pymongo[srv]"
