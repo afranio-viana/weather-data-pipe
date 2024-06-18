@@ -19,7 +19,6 @@ Este repositório apresenta um projeto próprio de um pipeline de dados da [weat
 
 ## Árvore de pastas
 ```
-|-- config
 |-- dags
     |-- weather
         |-- custom_dags
@@ -33,7 +32,6 @@ Este repositório apresenta um projeto próprio de um pipeline de dados da [weat
         -- city path --
 |-- img
 |-- logs
-|-- plugins
 -- setup scripts --
 
 ```
