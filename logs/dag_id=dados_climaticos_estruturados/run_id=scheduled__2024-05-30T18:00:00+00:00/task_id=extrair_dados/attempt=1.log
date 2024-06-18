@@ -1,0 +1,99 @@
+[2024-06-05T01:01:59.746+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-05T01:01:59.801+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dados_climaticos_estruturados.extrair_dados scheduled__2024-05-30T18:00:00+00:00 [queued]>
+[2024-06-05T01:01:59.818+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dados_climaticos_estruturados.extrair_dados scheduled__2024-05-30T18:00:00+00:00 [queued]>
+[2024-06-05T01:01:59.820+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-06-05T01:01:59.845+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): extrair_dados> on 2024-05-30 18:00:00+00:00
+[2024-06-05T01:01:59.861+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=3421) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-06-05T01:01:59.865+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dados_climaticos_estruturados', 'extrair_dados', 'scheduled__2024-05-30T18:00:00+00:00', '--job-id', '1474', '--raw', '--subdir', 'DAGS_FOLDER/weather/custom_dags/dados_climaticos_estruturados.py', '--cfg-path', '/tmp/tmpgimiyd0k']
+[2024-06-05T01:01:59.867+0000] {standard_task_runner.py:63} INFO - Started process 3450 to run task
+[2024-06-05T01:01:59.868+0000] {standard_task_runner.py:91} INFO - Job 1474: Subtask extrair_dados
+[2024-06-05T01:01:59.965+0000] {task_command.py:426} INFO - Running <TaskInstance: dados_climaticos_estruturados.extrair_dados scheduled__2024-05-30T18:00:00+00:00 [running]> on host 6665b0710315
+[2024-06-05T01:02:00.164+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dados_climaticos_estruturados' AIRFLOW_CTX_TASK_ID='extrair_dados' AIRFLOW_CTX_EXECUTION_DATE='2024-05-30T18:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-05-30T18:00:00+00:00'
+[2024-06-05T01:02:00.171+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-05T01:02:03.363+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-05T01:02:03.364+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/weather/etl/extract.py", line 13, in extrair_dados
+    dados = pd.read_csv(url)
+            ^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/common.py", line 728, in get_handle
+    ioargs = _get_filepath_or_buffer(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/common.py", line 384, in _get_filepath_or_buffer
+    with urlopen(req_info) as req:
+         ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/common.py", line 289, in urlopen
+    return urllib.request.urlopen(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/urllib/request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/urllib/request.py", line 521, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/urllib/request.py", line 630, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/urllib/request.py", line 559, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/urllib/request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/urllib/request.py", line 639, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 401: 
+[2024-06-05T01:02:03.378+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=dados_climaticos_estruturados, task_id=extrair_dados, run_id=scheduled__2024-05-30T18:00:00+00:00, execution_date=20240530T180000, start_date=20240605T010159, end_date=20240605T010203
+[2024-06-05T01:02:03.400+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 1474 for task extrair_dados (HTTP Error 401: ; 3450)
+[2024-06-05T01:02:03.430+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-06-05T01:02:03.462+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-05T01:02:03.465+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-06-05T01:41:37.922+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-05T01:41:37.977+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dados_climaticos_estruturados.extrair_dados scheduled__2024-05-30T18:00:00+00:00 [queued]>
+[2024-06-05T01:41:38.006+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dados_climaticos_estruturados.extrair_dados scheduled__2024-05-30T18:00:00+00:00 [queued]>
+[2024-06-05T01:41:38.007+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-06-05T01:41:38.055+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): extrair_dados> on 2024-05-30 18:00:00+00:00
+[2024-06-05T01:41:38.091+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dados_climaticos_estruturados', 'extrair_dados', 'scheduled__2024-05-30T18:00:00+00:00', '--job-id', '1084', '--raw', '--subdir', 'DAGS_FOLDER/weather/custom_dags/dados_climaticos_estruturados.py', '--cfg-path', '/tmp/tmpplmuei38']
+[2024-06-05T01:41:38.099+0000] {standard_task_runner.py:91} INFO - Job 1084: Subtask extrair_dados
+[2024-06-05T01:41:38.091+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=3396) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-06-05T01:41:38.108+0000] {standard_task_runner.py:63} INFO - Started process 3427 to run task
+[2024-06-05T01:41:38.222+0000] {task_command.py:426} INFO - Running <TaskInstance: dados_climaticos_estruturados.extrair_dados scheduled__2024-05-30T18:00:00+00:00 [running]> on host 80232deae70a
+[2024-06-05T01:41:38.484+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dados_climaticos_estruturados' AIRFLOW_CTX_TASK_ID='extrair_dados' AIRFLOW_CTX_EXECUTION_DATE='2024-05-30T18:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-05-30T18:00:00+00:00'
+[2024-06-05T01:41:38.489+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-05T01:41:39.372+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-06-05T01:41:39.373+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-05T01:41:39.392+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dados_climaticos_estruturados, task_id=extrair_dados, run_id=scheduled__2024-05-30T18:00:00+00:00, execution_date=20240530T180000, start_date=20240605T014137, end_date=20240605T014139
+[2024-06-05T01:41:39.435+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-05T01:41:39.466+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-05T01:41:39.469+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

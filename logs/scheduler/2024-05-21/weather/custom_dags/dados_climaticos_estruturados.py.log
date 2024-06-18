@@ -1,0 +1,105 @@
+[2024-05-21T00:00:19.840+0000] {processor.py:161} INFO - Started process (PID=34) to work on /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py
+[2024-05-21T00:00:19.840+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py for tasks to queue
+[2024-05-21T00:00:19.842+0000] {logging_mixin.py:188} INFO - [2024-05-21T00:00:19.842+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py
+[2024-05-21T00:00:21.009+0000] {processor.py:840} INFO - DAG(s) 'dados_climaticos_estruturados' retrieved from /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py
+[2024-05-21T00:00:21.189+0000] {logging_mixin.py:188} INFO - [2024-05-21T00:00:21.189+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-21T00:00:21.206+0000] {logging_mixin.py:188} INFO - [2024-05-21T00:00:21.206+0000] {dag.py:3954} INFO - Setting next_dagrun for dados_climaticos_estruturados to 2024-05-17 12:00:00+00:00, run_after=2024-05-17 12:05:00+00:00
+[2024-05-21T00:00:21.222+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py took 1.387 seconds
+[2024-05-21T00:00:52.540+0000] {processor.py:161} INFO - Started process (PID=105) to work on /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py
+[2024-05-21T00:00:52.541+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py for tasks to queue
+[2024-05-21T00:00:52.545+0000] {logging_mixin.py:188} INFO - [2024-05-21T00:00:52.544+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py
+[2024-05-21T00:00:53.247+0000] {processor.py:840} INFO - DAG(s) 'dados_climaticos_estruturados' retrieved from /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py
+[2024-05-21T00:00:53.262+0000] {logging_mixin.py:188} INFO - [2024-05-21T00:00:53.262+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-21T00:00:53.283+0000] {logging_mixin.py:188} INFO - [2024-05-21T00:00:53.283+0000] {dag.py:3954} INFO - Setting next_dagrun for dados_climaticos_estruturados to 2024-05-17 14:15:00+00:00, run_after=2024-05-17 14:20:00+00:00
+[2024-05-21T00:00:53.300+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py took 0.767 seconds
+[2024-05-21T00:01:24.176+0000] {processor.py:161} INFO - Started process (PID=167) to work on /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py
+[2024-05-21T00:01:24.177+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py for tasks to queue
+[2024-05-21T00:01:24.179+0000] {logging_mixin.py:188} INFO - [2024-05-21T00:01:24.178+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py
+[2024-05-21T00:01:24.656+0000] {processor.py:840} INFO - DAG(s) 'dados_climaticos_estruturados' retrieved from /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py
+[2024-05-21T00:01:24.675+0000] {logging_mixin.py:188} INFO - [2024-05-21T00:01:24.674+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-21T00:01:24.703+0000] {logging_mixin.py:188} INFO - [2024-05-21T00:01:24.702+0000] {dag.py:3954} INFO - Setting next_dagrun for dados_climaticos_estruturados to 2024-05-17 19:25:00+00:00, run_after=2024-05-17 19:30:00+00:00
+[2024-05-21T00:01:24.727+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py took 0.557 seconds
+[2024-05-21T00:01:34.629+0000] {processor.py:161} INFO - Started process (PID=212) to work on /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py
+[2024-05-21T00:01:34.631+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py for tasks to queue
+[2024-05-21T00:01:34.633+0000] {logging_mixin.py:188} INFO - [2024-05-21T00:01:34.632+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py
+[2024-05-21T00:01:35.004+0000] {processor.py:840} INFO - DAG(s) 'dados_climaticos_estruturados' retrieved from /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py
+[2024-05-21T00:01:35.016+0000] {logging_mixin.py:188} INFO - [2024-05-21T00:01:35.016+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-21T00:01:35.031+0000] {logging_mixin.py:188} INFO - [2024-05-21T00:01:35.031+0000] {dag.py:3954} INFO - Setting next_dagrun for dados_climaticos_estruturados to 2024-05-17 20:25:00+00:00, run_after=2024-05-17 20:30:00+00:00
+[2024-05-21T00:01:35.044+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py took 0.420 seconds
+[2024-05-21T00:02:05.226+0000] {processor.py:161} INFO - Started process (PID=271) to work on /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py
+[2024-05-21T00:02:05.233+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py for tasks to queue
+[2024-05-21T00:02:05.236+0000] {logging_mixin.py:188} INFO - [2024-05-21T00:02:05.236+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py
+[2024-05-21T00:02:05.909+0000] {processor.py:840} INFO - DAG(s) 'dados_climaticos_estruturados' retrieved from /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py
+[2024-05-21T00:02:05.942+0000] {logging_mixin.py:188} INFO - [2024-05-21T00:02:05.941+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-21T00:02:05.981+0000] {logging_mixin.py:188} INFO - [2024-05-21T00:02:05.981+0000] {dag.py:3954} INFO - Setting next_dagrun for dados_climaticos_estruturados to 2024-05-18 01:20:00+00:00, run_after=2024-05-18 01:25:00+00:00
+[2024-05-21T00:02:06.009+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py took 0.792 seconds
+[2024-05-21T00:02:32.458+0000] {processor.py:161} INFO - Started process (PID=331) to work on /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py
+[2024-05-21T00:02:32.460+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py for tasks to queue
+[2024-05-21T00:02:32.468+0000] {logging_mixin.py:188} INFO - [2024-05-21T00:02:32.467+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py
+[2024-05-21T00:02:33.091+0000] {processor.py:840} INFO - DAG(s) 'dados_climaticos_estruturados' retrieved from /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py
+[2024-05-21T00:02:33.106+0000] {logging_mixin.py:188} INFO - [2024-05-21T00:02:33.106+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-21T00:02:33.128+0000] {logging_mixin.py:188} INFO - [2024-05-21T00:02:33.127+0000] {dag.py:3954} INFO - Setting next_dagrun for dados_climaticos_estruturados to 2024-05-18 05:25:00+00:00, run_after=2024-05-18 05:30:00+00:00
+[2024-05-21T00:02:33.157+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py took 0.710 seconds
+[2024-05-21T00:02:57.268+0000] {processor.py:161} INFO - Started process (PID=360) to work on /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py
+[2024-05-21T00:02:57.269+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py for tasks to queue
+[2024-05-21T00:02:57.271+0000] {logging_mixin.py:188} INFO - [2024-05-21T00:02:57.271+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py
+[2024-05-21T00:02:57.737+0000] {processor.py:840} INFO - DAG(s) 'dados_climaticos_estruturados' retrieved from /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py
+[2024-05-21T00:02:57.757+0000] {logging_mixin.py:188} INFO - [2024-05-21T00:02:57.756+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-21T00:02:57.785+0000] {logging_mixin.py:188} INFO - [2024-05-21T00:02:57.785+0000] {dag.py:3954} INFO - Setting next_dagrun for dados_climaticos_estruturados to 2024-05-18 08:30:00+00:00, run_after=2024-05-18 08:35:00+00:00
+[2024-05-21T00:02:57.814+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py took 0.553 seconds
+[2024-05-21T00:03:07.560+0000] {processor.py:161} INFO - Started process (PID=403) to work on /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py
+[2024-05-21T00:03:07.562+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py for tasks to queue
+[2024-05-21T00:03:07.564+0000] {logging_mixin.py:188} INFO - [2024-05-21T00:03:07.564+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py
+[2024-05-21T00:03:08.045+0000] {processor.py:840} INFO - DAG(s) 'dados_climaticos_estruturados' retrieved from /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py
+[2024-05-21T00:03:08.060+0000] {logging_mixin.py:188} INFO - [2024-05-21T00:03:08.059+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-21T00:03:08.081+0000] {logging_mixin.py:188} INFO - [2024-05-21T00:03:08.080+0000] {dag.py:3954} INFO - Setting next_dagrun for dados_climaticos_estruturados to 2024-05-18 10:25:00+00:00, run_after=2024-05-18 10:30:00+00:00
+[2024-05-21T00:03:08.102+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py took 0.549 seconds
+[2024-05-21T00:03:09.134+0000] {processor.py:161} INFO - Started process (PID=405) to work on /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py
+[2024-05-21T00:03:09.135+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py for tasks to queue
+[2024-05-21T00:03:09.137+0000] {logging_mixin.py:188} INFO - [2024-05-21T00:03:09.137+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py
+[2024-05-21T00:03:09.498+0000] {processor.py:840} INFO - DAG(s) 'dados_climaticos_estruturados' retrieved from /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py
+[2024-05-21T00:03:09.512+0000] {logging_mixin.py:188} INFO - [2024-05-21T00:03:09.511+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-21T00:03:09.529+0000] {logging_mixin.py:188} INFO - [2024-05-21T00:03:09.529+0000] {dag.py:3954} INFO - Setting next_dagrun for dados_climaticos_estruturados to 2024-05-18 10:30:00+00:00, run_after=2024-05-18 10:35:00+00:00
+[2024-05-21T00:03:09.542+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py took 0.413 seconds
+[2024-05-21T00:03:19.196+0000] {processor.py:161} INFO - Started process (PID=407) to work on /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py
+[2024-05-21T00:03:19.198+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py for tasks to queue
+[2024-05-21T00:03:19.201+0000] {logging_mixin.py:188} INFO - [2024-05-21T00:03:19.201+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py
+[2024-05-21T00:03:19.920+0000] {processor.py:840} INFO - DAG(s) 'dados_climaticos_estruturados' retrieved from /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py
+[2024-05-21T00:03:19.947+0000] {logging_mixin.py:188} INFO - [2024-05-21T00:03:19.946+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-21T00:03:19.982+0000] {logging_mixin.py:188} INFO - [2024-05-21T00:03:19.981+0000] {dag.py:3954} INFO - Setting next_dagrun for dados_climaticos_estruturados to 2024-05-18 12:00:00+00:00, run_after=2024-05-18 12:05:00+00:00
+[2024-05-21T00:03:20.020+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py took 0.832 seconds
+[2024-05-21T00:03:20.625+0000] {processor.py:161} INFO - Started process (PID=409) to work on /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py
+[2024-05-21T00:03:20.627+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py for tasks to queue
+[2024-05-21T00:03:20.630+0000] {logging_mixin.py:188} INFO - [2024-05-21T00:03:20.630+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py
+[2024-05-21T00:03:21.110+0000] {processor.py:840} INFO - DAG(s) 'dados_climaticos_estruturados' retrieved from /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py
+[2024-05-21T00:03:21.133+0000] {logging_mixin.py:188} INFO - [2024-05-21T00:03:21.132+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-21T00:03:21.155+0000] {logging_mixin.py:188} INFO - [2024-05-21T00:03:21.154+0000] {dag.py:3954} INFO - Setting next_dagrun for dados_climaticos_estruturados to 2024-05-18 12:00:00+00:00, run_after=2024-05-18 12:05:00+00:00
+[2024-05-21T00:03:21.171+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py took 0.553 seconds
+[2024-05-21T00:03:51.821+0000] {processor.py:161} INFO - Started process (PID=469) to work on /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py
+[2024-05-21T00:03:51.822+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py for tasks to queue
+[2024-05-21T00:03:51.824+0000] {logging_mixin.py:188} INFO - [2024-05-21T00:03:51.824+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py
+[2024-05-21T00:03:52.195+0000] {processor.py:840} INFO - DAG(s) 'dados_climaticos_estruturados' retrieved from /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py
+[2024-05-21T00:03:52.208+0000] {logging_mixin.py:188} INFO - [2024-05-21T00:03:52.208+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-21T00:03:52.224+0000] {logging_mixin.py:188} INFO - [2024-05-21T00:03:52.224+0000] {dag.py:3954} INFO - Setting next_dagrun for dados_climaticos_estruturados to 2024-05-18 15:50:00+00:00, run_after=2024-05-18 15:55:00+00:00
+[2024-05-21T00:03:52.237+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py took 0.420 seconds
+[2024-05-21T00:04:22.539+0000] {processor.py:161} INFO - Started process (PID=528) to work on /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py
+[2024-05-21T00:04:22.539+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py for tasks to queue
+[2024-05-21T00:04:22.541+0000] {logging_mixin.py:188} INFO - [2024-05-21T00:04:22.541+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py
+[2024-05-21T00:04:22.902+0000] {processor.py:840} INFO - DAG(s) 'dados_climaticos_estruturados' retrieved from /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py
+[2024-05-21T00:04:22.919+0000] {logging_mixin.py:188} INFO - [2024-05-21T00:04:22.918+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-21T00:04:22.937+0000] {logging_mixin.py:188} INFO - [2024-05-21T00:04:22.937+0000] {dag.py:3954} INFO - Setting next_dagrun for dados_climaticos_estruturados to 2024-05-18 20:50:00+00:00, run_after=2024-05-18 20:55:00+00:00
+[2024-05-21T00:04:22.951+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py took 0.418 seconds
+[2024-05-21T00:04:52.980+0000] {processor.py:161} INFO - Started process (PID=588) to work on /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py
+[2024-05-21T00:04:52.981+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py for tasks to queue
+[2024-05-21T00:04:52.983+0000] {logging_mixin.py:188} INFO - [2024-05-21T00:04:52.982+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py
+[2024-05-21T00:04:53.352+0000] {processor.py:840} INFO - DAG(s) 'dados_climaticos_estruturados' retrieved from /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py
+[2024-05-21T00:04:53.367+0000] {logging_mixin.py:188} INFO - [2024-05-21T00:04:53.367+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-21T00:04:53.382+0000] {logging_mixin.py:188} INFO - [2024-05-21T00:04:53.382+0000] {dag.py:3954} INFO - Setting next_dagrun for dados_climaticos_estruturados to 2024-05-19 00:10:00+00:00, run_after=2024-05-19 00:15:00+00:00
+[2024-05-21T00:04:53.407+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py took 0.432 seconds
+[2024-05-21T00:05:23.476+0000] {processor.py:161} INFO - Started process (PID=652) to work on /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py
+[2024-05-21T00:05:23.478+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py for tasks to queue
+[2024-05-21T00:05:23.482+0000] {logging_mixin.py:188} INFO - [2024-05-21T00:05:23.481+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py
+[2024-05-21T00:05:23.881+0000] {processor.py:840} INFO - DAG(s) 'dados_climaticos_estruturados' retrieved from /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py
+[2024-05-21T00:05:23.896+0000] {logging_mixin.py:188} INFO - [2024-05-21T00:05:23.895+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-21T00:05:23.912+0000] {logging_mixin.py:188} INFO - [2024-05-21T00:05:23.911+0000] {dag.py:3954} INFO - Setting next_dagrun for dados_climaticos_estruturados to 2024-05-19 04:30:00+00:00, run_after=2024-05-19 04:35:00+00:00
+[2024-05-21T00:05:23.926+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/weather/custom_dags/dados_climaticos_estruturados.py took 0.458 seconds

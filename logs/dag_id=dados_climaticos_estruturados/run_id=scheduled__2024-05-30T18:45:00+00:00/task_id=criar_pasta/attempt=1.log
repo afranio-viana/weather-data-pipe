@@ -1,0 +1,40 @@
+[2024-06-05T01:01:59.720+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-05T01:01:59.763+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dados_climaticos_estruturados.criar_pasta scheduled__2024-05-30T18:45:00+00:00 [queued]>
+[2024-06-05T01:01:59.777+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dados_climaticos_estruturados.criar_pasta scheduled__2024-05-30T18:45:00+00:00 [queued]>
+[2024-06-05T01:01:59.780+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-06-05T01:01:59.812+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): criar_pasta> on 2024-05-30 18:45:00+00:00
+[2024-06-05T01:01:59.824+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=3417) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-06-05T01:01:59.827+0000] {standard_task_runner.py:63} INFO - Started process 3448 to run task
+[2024-06-05T01:01:59.829+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dados_climaticos_estruturados', 'criar_pasta', 'scheduled__2024-05-30T18:45:00+00:00', '--job-id', '1473', '--raw', '--subdir', 'DAGS_FOLDER/weather/custom_dags/dados_climaticos_estruturados.py', '--cfg-path', '/tmp/tmpwqwv6m_p']
+[2024-06-05T01:01:59.831+0000] {standard_task_runner.py:91} INFO - Job 1473: Subtask criar_pasta
+[2024-06-05T01:01:59.944+0000] {task_command.py:426} INFO - Running <TaskInstance: dados_climaticos_estruturados.criar_pasta scheduled__2024-05-30T18:45:00+00:00 [running]> on host 6665b0710315
+[2024-06-05T01:02:00.167+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dados_climaticos_estruturados' AIRFLOW_CTX_TASK_ID='criar_pasta' AIRFLOW_CTX_EXECUTION_DATE='2024-05-30T18:45:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-05-30T18:45:00+00:00'
+[2024-06-05T01:02:00.172+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-05T01:02:00.180+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-06-05T01:02:00.181+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-05T01:02:00.198+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dados_climaticos_estruturados, task_id=criar_pasta, run_id=scheduled__2024-05-30T18:45:00+00:00, execution_date=20240530T184500, start_date=20240605T010159, end_date=20240605T010200
+[2024-06-05T01:02:00.264+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-05T01:02:00.297+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-06-05T01:02:00.300+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-06-05T01:41:38.640+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-05T01:41:38.682+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dados_climaticos_estruturados.criar_pasta scheduled__2024-05-30T18:45:00+00:00 [queued]>
+[2024-06-05T01:41:38.739+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dados_climaticos_estruturados.criar_pasta scheduled__2024-05-30T18:45:00+00:00 [queued]>
+[2024-06-05T01:41:38.743+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-06-05T01:41:38.781+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): criar_pasta> on 2024-05-30 18:45:00+00:00
+[2024-06-05T01:41:38.802+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=3404) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-06-05T01:41:38.808+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dados_climaticos_estruturados', 'criar_pasta', 'scheduled__2024-05-30T18:45:00+00:00', '--job-id', '1086', '--raw', '--subdir', 'DAGS_FOLDER/weather/custom_dags/dados_climaticos_estruturados.py', '--cfg-path', '/tmp/tmpct40w6z7']
+[2024-06-05T01:41:38.810+0000] {standard_task_runner.py:63} INFO - Started process 3433 to run task
+[2024-06-05T01:41:38.812+0000] {standard_task_runner.py:91} INFO - Job 1086: Subtask criar_pasta
+[2024-06-05T01:41:38.928+0000] {task_command.py:426} INFO - Running <TaskInstance: dados_climaticos_estruturados.criar_pasta scheduled__2024-05-30T18:45:00+00:00 [running]> on host 80232deae70a
+[2024-06-05T01:41:39.097+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dados_climaticos_estruturados' AIRFLOW_CTX_TASK_ID='criar_pasta' AIRFLOW_CTX_EXECUTION_DATE='2024-05-30T18:45:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-05-30T18:45:00+00:00'
+[2024-06-05T01:41:39.099+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-05T01:41:39.102+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-06-05T01:41:39.103+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-05T01:41:39.119+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dados_climaticos_estruturados, task_id=criar_pasta, run_id=scheduled__2024-05-30T18:45:00+00:00, execution_date=20240530T184500, start_date=20240605T014138, end_date=20240605T014139
+[2024-06-05T01:41:39.164+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-05T01:41:39.198+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-06-05T01:41:39.201+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
